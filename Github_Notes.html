@@ -76,7 +76,48 @@ npm install @material-ui/core
 4.git commit -m "some meassages"
 5.git remote add origin <link of  repo the we have cretaed on which it will be pushed>
 6.git push origin main
+///////////////////////////////////////////////////
+Clone - Cloning a repository on our local machine:
+Use git clone <repository link> to clone a repository.
+To show hidden files, use ls -a.
+To check status, use git status. If it shows "Up to date," both the code in GitHub and the code in the code editor are on the same stage, and no action is needed.
+After modifying a file, you need to perform two steps: 1. Add, 2. Commit.
+"Untracked" means a new file that was created in the editor but Git hasn't tracked yet.
+"Modified" means changed.
+"Staged" means the file is ready to be committed.
+"Unmodified" means unchanged.
+Use git add <file name> to add new or changed files in your working directory to the Git staging area.
+Use git commit -m "some message" to commit changes.
+To add all files at once, use git add ..
+Use git push origin main to upload local changes to the repository on GitHub.
+Example:
+If we deleted a file from our local machine, it doesn't mean that it will be deleted from GitHub. For that:
 
+Commit: git commit -m "deleted (we can write our message here)".
+
+Push: git push to push the changes to GitHub.
+
+Git Init Command:
+
+The git init command is used to initialize a new Git repository.
+To identify whether a directory is a Git repo or not, use ls -a. If there is no .git directory, then it is not a Git repo.
+Use git remote add origin <repository link> to add a new remote (usually the repository on GitHub, named "origin" by default).
+Use git remote -v to verify your Git remote repository.
+Use git branch to check the branch.
+Example:
+If there are three branches in a tree - Frontend team working on Branch A, Backend team working on Branch B, and Bugfixing team working on Branch C.
+
+To change branch name, use git branch -M <branch name>.
+
+You can use the -u flag along with git push origin main to set the upstream, which allows you to push your code to the same repository without specifying origin main each time.
+
+Workflow for local Git:
+
+Clone the GitHub repository.
+Make changes.
+Add changes.
+Commit changes.
+Push changes.
 
 
 
