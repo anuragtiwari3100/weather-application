@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Clone - Cloning a reposetry on our local machine
+   git clone <-Some link->
+to show  hidden file  ls -a
+to cheack ststus => git status  if it is showing UP to date means we do not have need to do any thing means both code are on same stage giithub and Code editor
+=>after modify the file we have to perform two step Process 1.add 2. Commit
+=>untracted-> new file that was created in editor  earlier  git doestn't  yet track
+=>modified->changed
+=>staged-> file is ready to committed
+=>unmodified->unchanged
+=>add-> adds new  or changed files in your working   directory  to  the   git  staging area
+    git add<-file name->
+=> coomit-> it is the record  of change
+ git  commit -m "some messages"
+=> to add all files at ones -> git add .
+=>push command  :- uploading local or say to sysytem changes on repo or github  for that we use git push origin main
+-------------------------------------- example 
+we deleted a file from  our local machine but does't mean that it will be deleted  also from  github  for that 
+1.we have to commit -> git Badhiya commit -m "deleted(we can write out message over  here)"
+2. we  git push  now have to push it  also -> changes will be   reflact git hub also
+--------------------------------------------
+1.Init command:-The git init command is used to initialize a new Git repository
+2. to identify weather any dir is git repo or not for that we can use ls -a if there is no such .git files then it is not git repo
+3. now we can git init now there will be a .git file
+4. git remote add origin <yaha link rakhna hai>
+   we want to add a new romte  that is noting but repo ogf github having  named origin budefault
+5.to verify our git remote repositry -> git remote -v
+6.git barch :to cheack brach
+ex- one tree having three barch frontEnd team  Backend working on Brach A
+ frontEnd team working on Brach B 
+ buggerFixingTeam  team working on Brach C 
+it 
+7.To change brachName :-git branch -M branchname
+8.we can also use -u flag along with git push origin main because 
+   To set upstream means there may be scenerio where we have work on the same project so instead of writting origin main again and again we  can use git push -u  to push our code on same repo
+exampl:let say ki hamne kya kia ki ek directory me ek html file this jo already pushed thi on  git hub ab hamne ek naya css file banya aur sath sath existing html file me kuch modify kia to iske github me show karane ke lie
+ setp:1:-check git status-> git status
+ step:2->to add all changes at once->git add .
+  step:3->commit changes ->git commit -m "some messages will be there"
+   step:4->again check git status->shouls  be nothing to change
+  step-5->pushing repo->git push -u/git push origin main
+//////////////////
+worj-flow->for loacal git->> 1.Github repo ->2.clone -> 3.changes ->4.add ->5.commit ->push
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+48:::
+//////////////////////////////////////////////////////////////////////
+
+Pinned by Sahil & Sarra
+@sahilandsarra
+2 weeks ago (edited)
+1. CS 50: https://www.youtube.com/watch?v=8mAITcNt710
+2. 100 Days of Code: https://click.linksynergy.com/deeplink?id=01rQoZZYOzo&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2F100-days-of-code%2F&u1=100-days-of-code
+3. Algorithms 1 and 2: http://imp.i384100.net/algorithms-1 and http://imp.i384100.net/algorithms-2
+4. Meta Front-end Professional Certificate: http://imp.i384100.net/Meta-FE
+5. System Design: https://www.youtube.com/watch?v=-W9F__D3oY4
+//////////////Sahil And sara 
+1.git stash
+2.git cherry ppick
+3.git reset
+4.git fetch 
+5.git rebays
+npm install @material-ui/core
+
+////ex we have to upload our loginn page to git hub
+1.git init 
+2.git status
+3.git add .
+4.git commit -m "some meassages"
+5.git remote add origin <link of  repo the we have cretaed on which it will be pushed>
+6.git push origin main
+
+
+
+
+  
+
+
+
+
+
+    </h1>
+</body>
+</html>
